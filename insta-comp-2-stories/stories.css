@@ -36,9 +36,13 @@ ul {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+
+  max-width: 90px; /* needed for text ellipsis */
 }
 
 .story-image-wrapper {
+  border: 2px solid purple;
+  border-radius: 50%;
   background-image: url(./img/insta-border.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,4 +62,21 @@ ul {
 
 .story-image-title {
   margin-top: 10px;
+  max-width: 100%;
+  /* needed for text ellipsis */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bg-image1 {
+  background-image: url(./img/dog-tall.png);
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-contain {
+  background-size: contain;
 }
