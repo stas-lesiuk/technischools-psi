@@ -1,0 +1,8 @@
+#animals {
+  display: flex;
+  font-size: 60px;
+}
+
+.chicken {
+  order: 2;
+}

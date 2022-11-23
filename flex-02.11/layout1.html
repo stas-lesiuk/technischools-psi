@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex - layout #1</title>
+    <link rel="stylesheet" href="./layout1.css" />
+  </head>
+  <body>
+    <header>
+      <img src="https://place-hold.it/300" alt="" class="logo" />
+      <span class="header-title">Tytuł</span>
+      <span class="header-title">Podtytuł</span>
+    </header>
+
+    <div class="main-wrapper">
+      <nav class="blog-nav">
+        <h2>Blog</h2>
+        <ul>
+          <li><a href="#">Najnowsze</a></li>
+          <li><a href="#">Najbardziej popularne</a></li>
+          <li><a href="#">Archiwum</a></li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <h1>Spoko strona</h1>
+        <h3>Jakie wymagania musi spełniać projekt:</h3>
+        <ul>
+          <li>nie modyfikuj HTML, tylko dodaj CSS</li>
+          <li>
+            strona musi zajmować co najmniej 100% wysokości (footer musi być na
+            dole ekranu niezależnie od jego wysokości)
+          </li>
+          <li>
+            strona nie może być ucięta pionowo - jeżeli brakuje miejsca, musi
+            pojawiać się scroll
+          </li>
+          <li>sekcja <code class="code-like">.blog-nav</code></li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </main>
+
+      <aside class="sidebar-with-ads">
+        <img
+          src="https://t4.ftcdn.net/jpg/03/77/32/97/360_F_377329754_JjM8NIyqca4v6EACX1Ux4LbOSw22UaTd.jpg"
+          alt="reklama"
+          class="ad-image"
+        />
+      </aside>
+    </div>
+
+    <footer>
+      <nav class="footer-menu">
+        <ul>
+          <li><a href="">Item 1</a></li>
+          <li><a href="">Item 2</a></li>
+          <li><a href="">Item 3</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
