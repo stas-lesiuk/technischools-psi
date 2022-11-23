@@ -41,13 +41,14 @@ ul {
 }
 
 .story-image-wrapper {
-  border: 2px solid purple;
   border-radius: 50%;
   background-image: url(./img/insta-border.png);
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   width: 80px;
   height: 80px;
+  padding: 8px;
 }
 
 .story-image {
@@ -79,4 +80,8 @@ ul {
 
 .bg-contain {
   background-size: contain;
+}
+
+.bg-black {
+  background-color: black;
 }
