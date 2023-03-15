@@ -75,6 +75,32 @@ switch (browser) {
 }
 ```
 
+### Zadanie 5.2 - przepisz if na switch
+
+```
+const firstNumber = +prompt('Enter first number');
+const secondNumber = +prompt('Enter second number');
+const operation = prompt('Enter operation');
+
+if(operation === '+') {
+  alert(firstNumber + secondNumber);
+} else if(operation === '-') {
+  alert(firstNumber - secondNumber);
+} else if(operation === '*') {
+  alert(firstNumber * secondNumber);
+} else if(operation === '/') {
+  if(secondNumber === 0) {
+    alert('Cannot divide by 0');
+  } else {
+    alert(firstNumber / secondNumber);
+  }
+} else {
+  alert('Unknown operation');
+}
+```
+
+```
+
 ## Obiekty
 
 ### Zadanie 6.1
@@ -91,11 +117,13 @@ switch (browser) {
 Posiadamy obiekt przechowujący wynagrodzenia naszego zespołu:
 
 ```
+
 const salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
+John: 100,
+Ann: 160,
+Pete: 130
 }
+
 ```
 
 Napisz kod sumujący wszystkie wynagrodzenia i zapisz w zmiennej `totalPayout`. W powyższym przykładzie powinno być `390`. Jeśli pensje są puste, wynik musi wynosić `0`.
@@ -105,21 +133,24 @@ P.S. dla iteracji spróbuj użyć pętli `for..in`.
 ### Zadanie 6.3 - przemnóż właściwości numeryczne w obiekcie
 
 ```
+
 // przed zmianami
 let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu"
+width: 200,
+height: 300,
+title: "My menu"
 };
 
 // dodaj zmiany tutaj
 
 // po zmianach
 menu = {
-  width: 400,
-  height: 600,
-  title: "My menu"
+width: 400,
+height: 600,
+title: "My menu"
 };
+
 ```
 
 P.S. dla sprawdzenia, czy dana właściwość jest liczbą, możesz użyć funkcji `typeof`. Np `typeof menu.width === 'number'`, lub `typeof menu[key] === 'number'`.
+```
