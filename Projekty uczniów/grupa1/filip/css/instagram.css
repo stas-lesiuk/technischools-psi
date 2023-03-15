@@ -1,0 +1,25 @@
+html{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    display: flex;
+    max-width: 100%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.div-top-post{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+}

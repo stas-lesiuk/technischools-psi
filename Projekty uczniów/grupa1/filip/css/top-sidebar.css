@@ -1,0 +1,44 @@
+.profil-img-top-sidebar {
+    
+    background: linear-gradient(to right, red, purple);
+    height: 50px;
+    border-radius: 30px;
+    width: 50px;
+    padding: 2px;
+    
+}
+.top-sidebar{
+    position: absolute ;
+    
+    width: 100%;
+    border: 1px solid rgb(177, 166, 166);
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgb(255, 254, 254);
+    
+}
+.a-top-sidebar{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-left: 10px;
+    margin-left: 30px;
+    
+}
+#strzałka{
+    position: absolute;
+    height: 30px;
+    right: 5px;
+    top: 35px;
+}
+.span-top-sidebar{
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 60px; 
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+}

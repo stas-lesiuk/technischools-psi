@@ -1,0 +1,130 @@
+body{
+    font-family: sans-serif;
+
+}
+
+.right-wrapper{
+    margin: 30px;
+    width: 400px;
+    margin-top: 50px;
+
+}
+
+
+.header .content-prof{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.profile-name{
+    gap:10px;
+}
+.nick{
+    color: black;
+    font-size: medium;
+}
+.header img{
+    border-radius: 50%;
+    width:55px;
+    height: 55px;
+}
+.name-surname{
+    color: gray;
+    font-size: small;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.header{
+    position: relative;
+}
+.switch-profile{
+    position: absolute;
+    right: 5px;
+    color: rgb(79, 79, 253);
+    font-weight: bold;
+}
+.header-content{
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+#sugestions{
+    color: grey;
+    font-size: large;
+    font-weight: bold;
+}
+.right-wrapper{
+    position: relative;
+}
+#view-all{
+    color: black;
+    position: absolute;
+    right: 0px;
+}
+.content{
+    margin-top: 20px;
+    position: relative;
+}
+.content .content-of-profiles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.content-of-profiles img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.follow{
+    margin-left:auto ;
+    color: rgb(79, 79, 253);
+    font-weight: bold;
+}
+.followed-by{
+    color: grey;
+    width: 200px;
+    font-weight: normal;
+
+}
+.content-of-profiles{
+    margin-top: 9px;
+}
+
+.bg1{
+    min-height: 60px;
+    min-width: 60px;
+    margin: 2px; 
+    background-size: cover; 
+    border-radius: 100%;
+
+}
+.bg-center1{
+    background-position: center;
+}
+
+#background-profile{
+    min-height: 70px;
+    min-width: 70px;
+    margin: 2px; 
+    background-size: cover; 
+    border-radius: 100%;
+    background-position: center;
+
+}
+
+.container-of-links{
+    margin-top: 30px;
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+
+}
+.container-of-links a{
+    color: gray;
+    font-weight: lighter;
+}

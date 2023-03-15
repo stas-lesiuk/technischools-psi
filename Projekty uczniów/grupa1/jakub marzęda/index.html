@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="main.js">
+</head>
+<body>
+    <div class="left-wrapper">
+        <header class="logo">
+            <a href=""><img src="./imgs-instagram/logo-instagram.png" alt=""></a>
+        </header>
+        <div class="instagram-menu">
+            <ul>
+                <a class="content-menu-instagram" href="">
+                    <li class="menu-icon">
+                        <img src="./imgs-instagram/home.png" alt="">
+                        <span>Home</span>
+                    </li>
+                </a>
+                <a class="content-menu-instagram" href="">
+                    <li class="menu-icon">
+                        <img src="./imgs-instagram/search.png" alt="">
+                        <span>Search</span>
+                    </li>
+                </a>
+                <a class="content-menu-instagram" href="">
+                    <li class="menu-icon">
+                        <img src="./imgs-instagram/explore.png" alt="">
+                        <span>Explore</span>
+                    </li>
+                </a>
+                <a class="content-menu-instagram" href="">
+                    <li class="menu-icon">
+                        <img src="./imgs-instagram/messages.png" alt="">
+                        <span>Messages</span>
+                    </li>
+                </a>
+                <a class="content-menu-instagram" href="">
+                    <li class="menu-icon">
+                        <img src="./imgs-instagram/notifications.png" alt="">
+                        <span>Notifications</span>
+                    </li>
+                </a>
+                <a class="content-menu-instagram" href="">
+                    <li class="menu-icon">
+                        <img src="./imgs-instagram/create.png" alt="">
+                        <span>Create</span>
+                    </li>
+                </a>
+                <a class="content-menu-instagram" href="">
+                    <li class="menu-icon">
+                        <img src="./imgs-instagram/profile.png" alt="">
+                        <span>Profile</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <footer class="footer">
+            <a class="menu-icon-footer" href="">
+                <li class="menu-icon">
+                    <img src="./imgs-instagram/more.png" alt="">
+                    <span>More</span>
+                </li>
+            </a>
+        </footer>
+    </div>
+    <div class="middle-of-instagram">
+        <div class="instastory">
+            <div class="container">
+                <div class="horizontal-scroll">
+                    <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fas fa-chevron-left"></i></button>
+                    <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class="fas fa-chevron-right"></i></button>
+                    <div class="storys-container">
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/wojewódzki.png" alt=""></a>
+                            </div>
+                            <span>Wojewódzki</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/ronaldo.png" alt=""></a>
+                            </div>
+                            <span>Cristiano Ronaldo</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/friz.png" alt=""></a>
+                            </div>
+                            <span>Karol Friz Wyśniewski</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/neymar.png" alt=""></a>
+                            </div>
+                            <span>Neymar Junior</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/neymar.png" alt=""></a>
+                            </div>
+                            <span>Neymar Junior</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/friz.png" alt=""></a>
+                            </div>
+                            <span>Karol Friz Wyśniewski</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/friz.png" alt=""></a>
+                            </div>
+                            <span>Karol Friz Wyśniewski</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/ronaldo.png" alt=""></a>
+                            </div>
+                            <span>Cristiano Ronaldo</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/ronaldo.png" alt=""></a>
+                            </div>
+                            <span>Cristiano Ronaldo</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/ronaldo.png" alt=""></a>
+                            </div>
+                            <span>Cristiano Ronaldo</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-circle">
+                                <a href=""><img src="./imgs-instagram/ronaldo.png" alt=""></a>
+                            </div>
+                            <span>Cristiano Ronaldo</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="header-post">
+                <a class="content-post-header" href="">
+                    <img class="logo-post-header" src="./imgs-instagram/profile-of-techni.png" alt="">
+                    <div class="content-about-post">
+                        <span class="name-of-profile-post">technishools</span>
+                        <br>
+                        <span class="location-post">Warszawa</span>
+                    </div>
+                </a>
+                <button><img class="more-header-button" src="./imgs-instagram/explore-header.png" alt=""></button>
+            </div>
+            <div class="post-photo">
+                    <img class="main-post-photo" src="./imgs-instagram/mati-photo.jpg" alt="">
+                    <button><img class="tagged-persons-photo" src="./imgs-instagram/tagged.png" alt=""></button>
+            </div>
+            <div class="post-icons">
+                <button><img src="./imgs-instagram/notifications1.png" alt=""></button>
+                <button><img src="./imgs-instagram/comment.png" alt=""></button>
+                <button><img src="./imgs-instagram/message.png" alt=""></button>
+                <button><img id="save-the-post" src="./imgs-instagram/save-post.png" alt=""></button>
+            </div>
+            <div class="bottom-post-part">
+                <div class="div-of-like">
+                    <a href=""><img src="./imgs-instagram/profile-of-techni.png" alt=""></a>
+                    <span class="like-this-text">Liked by</span><span class="like-by-person-post">Techni schools and 49 others</span>
+                </div>
+                <span class="post-description-author">techni schools</span><span class="post-description">Małe wspomnienie z super wydarzenia</span><br>
+                <a href=""><span>@czarodzieje.kodu 💛</span></a><br>
+                <span class="more-description-post">...more</span><br>
+                
+                <span class="time-post-published">1 day ago</span>
+                <div class="footer-post">
+                    <button><img src="./imgs-instagram/icona.png" alt=""></button>
+                    <input name="subject" class="no-outline" type="text" placeholder="Add comment...">
+                    <button><span class="post-comment">Post</span></button>
+                </div>
+            </div>          
+        </div>
+        
+        <div class="post">
+            <div class="header-post">
+                <a class="content-post-header" href="">
+                    <img class="logo-post-header" src="./imgs-instagram/profile-of-techni.png" alt="">
+                    <div class="content-about-post">
+                        <span class="name-of-profile-post">technishools</span>
+                        <br>
+                        <span class="location-post">Warszawa</span>
+                    </div>
+                </a>
+                <button><img class="more-header-button" src="./imgs-instagram/explore-header.png" alt=""></button>
+            </div>
+            <div class="post-photo">
+                    <img class="main-post-photo" src="./imgs-instagram/mati-photo.jpg" alt="">
+                    <button><img class="tagged-persons-photo" src="./imgs-instagram/tagged.png" alt=""></button>
+            </div>
+            <div class="post-icons">
+                <button><img src="./imgs-instagram/notifications1.png" alt=""></button>
+                <button><img src="./imgs-instagram/comment.png" alt=""></button>
+                <button><img src="./imgs-instagram/message.png" alt=""></button>
+                <button><img id="save-the-post" src="./imgs-instagram/save-post.png" alt=""></button>
+            </div>
+            <div class="bottom-post-part">
+                <div class="div-of-like">
+                    <a href=""><img src="./imgs-instagram/profile-of-techni.png" alt=""></a>
+                    <span class="like-this-text">Liked by</span><span class="like-by-person-post">Techni schools and 49 others</span>
+                </div>
+                <span class="post-description-author">techni schools</span><span class="post-description">Małe wspomnienie z super wydarzenia</span><br>
+                <a href=""><span>@czarodzieje.kodu 💛</span></a><br>
+                <span class="more-description-post">...more</span><br>
+                
+                <span class="time-post-published">1 day ago</span>
+                <div class="footer-post">
+                    <button><img src="./imgs-instagram/icona.png" alt=""></button>
+                    <input name="subject" class="no-outline" type="text" placeholder="Add comment...">
+                    <button><span class="post-comment">Post</span></button>
+                </div>
+            </div>          
+        </div>
+        <div class="post">
+            <div class="header-post">
+                <a class="content-post-header" href="">
+                    <img class="logo-post-header" src="./imgs-instagram/profile-of-techni.png" alt="">
+                    <div class="content-about-post">
+                        <span class="name-of-profile-post">technishools</span>
+                        <br>
+                        <span class="location-post">Warszawa</span>
+                    </div>
+                </a>
+                <button><img class="more-header-button" src="./imgs-instagram/explore-header.png" alt=""></button>
+            </div>
+            <div class="post-photo">
+                    <img class="main-post-photo" src="./imgs-instagram/mati-photo.jpg" alt="">
+                    <button><img class="tagged-persons-photo" src="./imgs-instagram/tagged.png" alt=""></button>
+            </div>
+            <div class="post-icons">
+                <button><img src="./imgs-instagram/notifications1.png" alt=""></button>
+                <button><img src="./imgs-instagram/comment.png" alt=""></button>
+                <button><img src="./imgs-instagram/message.png" alt=""></button>
+                <button><img id="save-the-post" src="./imgs-instagram/save-post.png" alt=""></button>
+            </div>
+            <div class="bottom-post-part">
+                <div class="div-of-like">
+                    <a href=""><img src="./imgs-instagram/profile-of-techni.png" alt=""></a>
+                    <span class="like-this-text">Liked by</span><span class="like-by-person-post">Techni schools and 49 others</span>
+                </div>
+                <span class="post-description-author">techni schools</span><span class="post-description">Małe wspomnienie z super wydarzenia</span><br>
+                <a href=""><span>@czarodzieje.kodu 💛</span></a><br>
+                <span class="more-description-post">...more</span><br>
+                
+                <span class="time-post-published">1 day ago</span>
+                <div class="footer-post">
+                    <button><img src="./imgs-instagram/icona.png" alt=""></button>
+                    <input name="subject" class="no-outline" type="text" placeholder="Add comment...">
+                    <button><span class="post-comment">Post</span></button>
+                </div>
+            </div>          
+        </div>
+
+    </div> 
+    
+    </div>  
+    <div class="right-wrapper">
+        <div class="header-right-wrapper">
+            <div class="content-of-profile-header">
+                <a href="">
+                    <img src="./imgs-instagram/my-profile.png" alt="">
+                </a>
+                <div class="name-of-profile-header">
+                    <a href=""><span class="nick-profile-header">k.kuba_07</span></a>
+                    <span class="name-lastname-profile-header">Jakub Marzęda</span>
+                </div>
+                <button><span class="switch-profile-button">Switch</span></button>
+            </div>
+        </div>
+        <div class="header-content">
+          <span class="sugestions-text">Sugestion for you</span>
+            <a href=""><span class="view-all-text">See all</span></a>     
+        </div>
+        <div class="content-right-wrapper">
+            <div class="proposed-accounts">
+                <div class="content-propoce-acount">
+                    <a href="">
+                        <img class="img-propoce-acount" src="./imgs-instagram/fame-mma.png" alt="">
+                    </a>
+                    <div class="name-of-profile-proposed">
+                        <a href=""><span class="nick-of-proposed-acounts">Fame mma</span></a>
+                        <span class="followed-by-profil-acounts-text">Followed by tadek_mordo i jest_kozak_szef</span>
+                    </div>
+                    <span class="follow">Follow</span>
+                </div>
+                <div class="content-propoce-acount">
+                    <a href="">
+                        <img class="img-propoce-acount" src="./imgs-instagram/fame-mma.png" alt="">
+                    </a>
+                    <div class="name-of-profile-proposed">
+                        <a href=""><span class="nick-of-proposed-acounts">Fame mma</span></a>
+                        <span class="followed-by-profil-acounts-text">Followed by tadek_mordo i jest_kozak_szef</span>
+                    </div>
+                    <span class="follow">Follow</span>
+                </div>
+                <div class="content-propoce-acount">
+                    <a href="">
+                        <img class="img-propoce-acount" src="./imgs-instagram/fame-mma.png" alt="">
+                    </a>
+                    <div class="name-of-profile-proposed">
+                        <a href=""><span class="nick-of-proposed-acounts">Fame mma</span></a>
+                        <span class="followed-by-profil-acounts-text">Followed by tadek_mordo i jest_kozak_szef</span>
+                    </div>
+                    <span class="follow">Follow</span>
+                </div>
+                <div class="content-propoce-acount">
+                    <a href="">
+                        <img class="img-propoce-acount" src="./imgs-instagram/fame-mma.png" alt="">
+                    </a>
+                    <div class="name-of-profile-proposed">
+                        <a href=""><span class="nick-of-proposed-acounts">Fame mma</span></a>
+                        <span class="followed-by-profil-acounts-text">Followed by tadek_mordo i jest_kozak_szef</span>
+                    </div>
+                    <span class="follow">Follow</span>
+                </div>
+                <div class="content-propoce-acount">
+                    <a href="">
+                        <img class="img-propoce-acount" src="./imgs-instagram/fame-mma.png" alt="">
+                    </a>
+                    <div class="name-of-profile-proposed">
+                        <a href=""><span class="nick-of-proposed-acounts">Fame mma</span></a>
+                        <span class="followed-by-profil-acounts-text">Followed by tadek_mordo i jest_kozak_szef</span>
+                    </div>
+                    <span class="follow">Follow</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-wrapper">
+            <div class="additional-information">
+                <a href=""><span>About ·</span></a>
+                <a href=""><span>Help ·</span></a>
+                <a href=""><span>Press ·</span></a>
+                <a href=""><span>API ·</span></a>
+                <a href=""><span>Jobs ·</span></a>
+                <a href=""><span>Privacy ·</span></a>
+                <br>
+                <a href=""><span>Terms ·</span></a>
+                <a href=""><span>Locations ·</span></a>
+                <a href="">Language ·</a>
+            </div>
+            <div class="company-of-instagram">
+                <span>© 2022 instagram from meta</span>
+            </div>
+        </div>    
+        <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black or white?</title>
+    <style>
+      :root {
+        --bg-color: #fff;
+        --secondary-color: #000;
+        --theme-color: red;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 10px;
+        min-height: 100vh;
+      }
+
+      header,
+      footer,
+      aside,
+      main {
+        border: 1px solid var(--secondary-color);
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+
+      aside {
+        flex: 1;
+      }
+
+      main {
+        flex: 3;
+      }
+
+      nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        list-style: none;
+      }
+
+      a {
+        color: var(--theme-color);
+      }
+
+      nav ul li {
+        margin-right: 10px;
+      }
+
+      .main-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        gap: 20px;
+        flex: 1;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-wrapper">
+      <aside>
+        <h2>Black or white?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quia, voluptate quae voluptatem quibusdam
+          necessitatibus quos voluptatibus quas quidem. Quisquam, quae
+          voluptatibus. Quisquam, quae voluptatibus. Quisquam, quae
+          voluptatibus.
+        </p>
+      </aside>
+      <main>
+        <h1>Home</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quia, voluptate quae voluptatem quibusdam
+          necessitatibus quos voluptatibus quas quidem. Quisquam, quae
+          voluptatibus. Quisquam, quae voluptatibus. Quisquam, quae
+          voluptatibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quia, voluptate quae voluptatem quibusdam
+          necessitatibus quos voluptatibus quas quidem. Quisquam, quae
+          voluptatibus. Quisquam, quae voluptatibus. Quisquam, quae
+          voluptatibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quia, voluptate quae voluptatem quibusdam
+          necessitatibus quos voluptatibus quas quidem. Quisquam, quae
+          voluptatibus. Quisquam, quae voluptatibus. Quisquam, quae
+          voluptatibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quia, voluptate quae voluptatem quibusdam
+          necessitatibus quos voluptatibus quas quidem. Quisquam, quae
+          voluptatibus. Quisquam, quae voluptatibus. Quisquam, quae
+          voluptatibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quia, voluptate quae voluptatem quibusdam
+          necessitatibus quos voluptatibus quas quidem. Quisquam, quae
+          voluptatibus. Quisquam, quae voluptatibus. Quisquam, quae
+          voluptatibus.
+        </p>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2022</p>
+    </footer>
+  </body>
+</html>

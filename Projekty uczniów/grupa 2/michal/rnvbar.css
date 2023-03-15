@@ -1,0 +1,43 @@
+body{
+    font-family: sans-serif;
+}   
+
+.rnavbar-main-wrapper{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.header{
+    border: 1px solid black;
+    margin: 1px;
+}
+
+.suggestion-list-wrapper{
+    border: 1px solid black;
+    margin: 1px;
+}
+
+.footer{
+    border: 1px solid black;
+    margin: 1px;
+}
+
+.profpic{
+    min-height: 100px;
+    min-width: 100px;
+    margin: 2px; 
+    background-size: cover; 
+    border-radius: 100%;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg{
+    min-height: 100px;
+    min-width: 100px;
+    margin: 2px; 
+    background-size: cover; 
+    border-radius: 100%;
+}

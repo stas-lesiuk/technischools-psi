@@ -1,0 +1,88 @@
+.bold{
+    font-weight: bold;
+}
+.grey{
+    color: grey;
+}
+.black{
+    color: black;
+}
+.absolute{
+    right: 5px;
+    position: absolute;
+}
+.relative{
+    position: relative;
+}.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.blue{
+    font-weight: bold;
+    color: blue;
+}
+.div-right-sidebar{
+    margin-left: 25px;
+    margin-top: 80px;
+    height: 500px;
+    width: 400px;
+}
+.header-right-sidebar{
+   
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+}
+.my-logo{
+    margin-left: 5px;
+    width: 60px;
+    border-radius: 50%;
+}
+.switch-right-sidebar{
+    
+    right: 0px;
+}
+.profil-suggestion-right-sidebar{
+    gap: 5px;
+}
+.div-suggestion{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.div-profil-suggestions-right-sidebar{
+    margin-top: 10px;
+    width: 100%;
+    gap: 5px;
+}
+.width-100{
+    width: 100%;
+}
+.profil-logo-right-sidebar{
+    margin-left: 5px;
+    width: 45px;
+    border-radius: 50%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.follow-right-sidebar{
+    right: 0px;
+}
+.See-all-right-sidebar{
+    right: 0px;
+}
+.info-right-sidebar{
+    font-size: small;
+    max-width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-right-sidebar{
+    font-size: small;
+    margin-top: 30px;
+}

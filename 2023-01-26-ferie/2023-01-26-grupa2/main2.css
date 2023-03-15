@@ -1,0 +1,23 @@
+div {
+  border: 1px solid red;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.first {
+  background-image: url(./dc-logo.jpeg);
+}
+
+.second {
+  background-color: lightblue;
+  background-image: url(./dog-tall.png);
+  background-size: contain;
+}
+
+.third {
+  background-image: url(./dog-wide.png);
+}

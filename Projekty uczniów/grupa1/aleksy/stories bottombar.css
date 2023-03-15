@@ -1,0 +1,141 @@
+
+
+.stories_bottombar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.stories_bottombar_top{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;;
+}
+
+.user_link{
+    display: flex;
+    flex-direction: row ;
+}
+
+.stories_bottombar_top_pfp_wrapper{
+    margin-right: 10px;
+}
+
+.stories_bottombar_top_spans_wrapper{
+    display: flex;
+    flex-direction: column
+}
+
+.stories_bottombar_top_verified_span_wrappe{
+    display: flex;
+    flex-direction: row ;
+}
+
+.stories_bottombar_bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.stories_bottombar_bottom_reactionsbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stories_bottombar_bottom_reactions{
+    display: flex;
+    flex-direction: row;
+}
+
+.stories_bottombar_bottom_reaction_option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_comment{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid lightgray;
+    padding: 10px;
+}
+
+img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.stories_bottombar_top_pfp_wrapper{
+    width: 40px;
+}
+
+.stories_bottombar_top_verified_wrapper{
+    width: 15px;
+}
+
+.stories_bottombar_top_verified_span_wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.stories_bottombar_bottom_story_text{
+    height: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 350px;
+    height: 1.2em;
+    white-space: nowrap;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    background-color: white;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.see_all_comments_link, .text_unroll{
+    color: gray;
+}
+
+.post_button{
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.stories_bottombar_bottom_reaction{
+    width: 30px;
+}
+
+.stories_bottombar_bottom_story_text_user_link{
+    font-weight: bold
+}
+
+.stories_bottombar_top, .stories_bottombar_bottom{
+    margin: 3px;
+}
+
+.emote_img_wrapper{
+    margin-right: 10px;
+}
+
+input{
+    border: none;
+}
+
+.stories_bottombar_bottom_story_text, .text_unroll, .see_all_comments{
+    margin-left: 10px;
+}
+
+

@@ -1,0 +1,354 @@
+html, body {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 95%;
+}
+.suggestions-wrapper a.right_navbar_username{
+  color: black;
+}
+.middle-section {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.post-header .post_header_username {
+  text-decoration: none;
+  color: black;
+}
+.post-header span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.post-header .post-user-profile {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+}
+.post-header .more-icon {
+  margin-left: auto;
+  margin-top: 5px;
+}
+.post_main_img {
+  position: relative;
+  width: 577px;
+}
+
+.post_main_img .photo_main {
+    box-sizing: content-box;
+    width: 500px;
+    padding-bottom: 75%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    background-position: center;
+}
+.post_main_img #p1{
+  background-image: url(./post/artworks-L1Gileyd55buJhiK-1Krh1Q-t500x500.jpg);
+}
+.post_main_img #p2{
+  background-image: url(./photos/Biden-Head-to-Head_Hero.jpg);
+}
+.post_main_img #p3{
+  background-image: url(./photos/274380091_634360454297031_5796660289481333154_n.jpg);
+}
+.post_main_img #p4{
+  background-image: url(./photos/signs-gcc4c90bd5_1920.jpg);
+}
+.post_main_img a {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  bottom: 25px;
+}
+.post_main_img #tagged-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 1000px;
+}
+.post {
+  margin-top: 20px;
+  width: 500px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-left: 80%;
+}
+.post-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.post-icons #multi-img {
+  width: 140px;
+}
+.post-icons #single-img {
+  width: 31px;
+}
+.likes-number {
+  margin-top: 15px;
+  font-weight: bold;
+  padding: 0 15px;
+}
+.post-discript {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.post-discript #more {
+  color: gray;
+  text-decoration: none;
+}
+.post-discript a {
+  text-decoration: none;
+}
+.post-date #how-long-ago {
+  color: gray;
+  font-size: 13px;
+  margin-right: 5px;
+}
+.post-date #translation {
+  font-weight: bold;
+  font-size: 14px;
+}
+.post-date {
+  margin: 10px 0;
+  padding: 0 15px;
+}
+.post-add-comment {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-top: 1px solid lightgray;
+}
+.post-add-comment img {
+  width: 28px;
+  margin-right: 15px;
+}
+.post-add-comment input {
+  outline: none;
+  border: 0;
+  width: 100%;
+  font-size: 15px;
+}
+.post-add-comment a {
+  color: #4eb4f7;
+  text-decoration: none;
+  opacity: 0.5;
+}
+.post-add-comment a:hover {
+  opacity: 1;
+}
+.help {
+  font-size: 13px;
+  width: 400px;
+  margin-top: 10%;
+  color: #d7d5d5;
+  display: flex;
+  flex-wrap: wrap;
+}
+.help p {
+  max-height: 1px;
+}
+.help a{
+  text-decoration: none;
+  color: #d7d5d5;
+}
+.help p::after {
+  content: "•";
+  margin: 0px 5px;
+}
+.help p:last-child::after {
+  content: "";
+}
+.meta-copyright {
+  color: #d7d5d5;
+  margin-top: 10%;
+  font-size: 14px;
+}
+.help li:first-child {
+  list-style-type: none;
+}
+.right-navbar {
+  font-family: sans-serif;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 350px;
+  margin-top: 25px;
+}
+.profile-right-navbar {
+  display: flex;
+  align-items: center;
+}
+.suggestions-header {
+  margin: 15px 0px;
+}
+.suggestions-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.sugestions-discpt {
+  display: flex;
+  flex-direction: column;
+}
+.suggestions-wrapper img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+.suggestions {
+  display: flex;
+  flex-direction: column;
+}
+.suggestions-wrapper a {
+  text-decoration: none;
+  color: #4eb4f7;
+  margin-left: auto;
+  font-weight: bold;
+}
+.suggestions-header {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+.suggestions-header a {
+  color: black;
+  text-decoration: none;
+  margin-left: auto;
+}
+.suggestions-header span {
+  color: gray;
+}
+.right-navbar-profile-discpt {
+  display: flex;
+  flex-direction: column;
+}
+.profile-right-navbar img {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+.profile-right-navbar a {
+  text-decoration: none;
+  margin-left: auto;
+  font-weight: bold;
+  color: #4eb4f7;
+}
+.right-navbar-profile-discpt span:first-child {
+  font-weight: bold;
+}
+.right-navbar-profile-discpt span:last-child {
+  color: #a1a1a1;
+}
+.sugestions-discpt span:last-child {
+  color: #a1a1a1;
+}
+.sugestions-discpt span:first-child {
+  font-weight: bold;
+}
+.background_gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, yellow 2%, rgba(252, 70, 107, 1) 42%);
+}
+.stories img {
+  border: 3px solid white;
+  display: flex;
+  border-radius: 100px;
+  width: 55px;
+  height: 55px;
+}
+.stories {
+  padding: 10px;
+  display: flex;
+  margin-left: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 480px;
+  height: 100px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.wrapper_1 {
+  width: 65px;
+  display: flex;
+  flex-direction: column;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.wrapper_1 span {
+  text-align: center;
+  margin-top: 10px;
+  font-family: sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.left-navbar {
+  position: fixed;
+  display: flex;
+  height: 1000px;
+  width: 220px;
+  margin-left: 10px;
+  border-right: 1px solid lightgray;
+}
+.header img {
+  width: 100px;
+  margin-top: 20px;
+}
+.content {
+  margin-top: 25px;
+  list-style-type: none;
+}
+.content-nav {
+  font-size: 15px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: black;
+  margin-bottom: 30px;
+}
+.footer {
+  position: absolute;
+  bottom: 300px;
+}
+
+.content-nav span {
+  margin-left: 15px;
+}
+#shrek {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+.content-nav:hover {
+  font-weight: bold;
+}
+.content-nav #home_icon{
+  width: 26px;
+}

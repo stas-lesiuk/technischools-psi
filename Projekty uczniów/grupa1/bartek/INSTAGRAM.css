@@ -1,0 +1,272 @@
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.grey {
+    color: lightgrey;
+}
+
+.radius {
+    border-radius: 100%;
+}
+
+.black {
+    color: black;
+}
+
+.small-words {
+    font-size: small;
+}
+
+.bold {
+    font-weight: bold;
+}
+.button {
+    background-color: white;
+    border: none;
+}
+
+.small-picture {
+    width: 30px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+
+.left-sidebar {
+    width: 20%;
+    border-right:solid 1px grey ;
+    min-height: 100%;
+    margin-right: 300px;
+    height: 100%;
+    background-color: white;
+    margin-top: -10px;
+
+}
+
+.logo-left-sidebar {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    margin-bottom: 150px;
+}
+
+.a-option-menu {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+}
+
+.a-option-menu:hover {
+    background-color: rgba(232, 232, 232, 0.989);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.div-option-menu {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px
+}
+
+.span-menu-left-sidebar {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.posts-sugestions-and-right-sidebar{
+    min-height: 100%;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+}
+
+.posts-and-suggestions {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-right: 20px;
+}
+
+.suggestions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    overflow-x: scroll;
+    height: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    border: 0.5px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.suggestion {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img-suggestion {
+    width: 63px;
+    border-radius: 100%;
+    border: 3px red solid;
+    padding: 2px;
+}
+
+.span-suggestion {
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+
+.posts {
+    width: 100%;
+}
+
+.post {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0.5px solid lightgray;
+    margin-bottom: 5px;
+}
+.header-post {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5px solid lightgrey;
+}
+
+.img-header-post {
+    width: 30px;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.spans-header-post {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.options-header-post {
+    display: flex;
+    align-self: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.img-post {
+    width: 100%;
+}
+
+.options-and-information-post {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-post {
+    margin-top: 5px;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    border-bottom:solid 0.5px lightgrey ;
+}
+
+.time-post {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: lightgrey;
+}
+
+.comments-post {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.span-comments {
+    color: lightgrey;
+    display: flex;
+    align-self: center;
+
+}
+
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.profile-right-sidebar {
+    display: flex;
+    flex-direction: row;
+}
+
+.span-profile-right-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.button-profile-right-sidebar {
+    color: blue;
+    background: aliceblue;
+    border: none;
+}
+
+.propozitions-right-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+.button-right-sidebar {
+    border: none;
+    background-color: aliceblue;
+}
+
+.propozition-right-sidebar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.span-propozition-right-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: auto
+}
+
+

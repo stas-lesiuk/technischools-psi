@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: pink;
+        color: black;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .full-width,
+      .item {
+        border: 1px solid black;
+      }
+
+      .full-width {
+        flex-basis: 100%;
+      }
+
+      .item {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="full-width">.full-width</div>
+      <div class="item">.item</div>
+      <div class="item">.item</div>
+      <div class="item">.item</div>
+    </div>
+  </body>
+</html>

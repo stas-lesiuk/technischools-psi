@@ -1,0 +1,134 @@
+body{
+    font-family: sans-serif
+}
+
+.aside{
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    border-right: 1px solid lightgrey;
+    
+
+}
+.logo-wrapper{
+    
+    margin-top: 10px;
+    margin-bottom:0px;
+    margin-bottom: 50px;
+    min-width: 50%;
+
+
+}
+
+.main-menu-wrapper{
+    
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+
+.insta-logo{
+    max-width: 50%;
+    justify-content: flex-start;
+    display: flex;
+}
+.ul-navigation-menu{
+    padding-left: 0px;
+    margin-left: 5px;
+}
+
+
+.ul-navigation-menu li{
+    list-style-type: none;
+    position: relative;
+}
+
+
+#Profile-pic{ 
+    min-height: 45px;
+    min-width: 45px;
+    margin: 2px; 
+    background-size: cover; 
+    border-radius: 100%;
+    background-position: center;
+}
+
+#profile{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+
+
+.insta-more{
+    width: 20px;
+
+}
+
+.main-button-wrapper li{
+    list-style-type: none;
+    margin-left: 5px;
+    text-decoration: none;
+    
+}
+
+.main-button-wrapper{
+    margin-top: 100%;
+}
+.insta-icon{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:active{
+    color: black;
+   
+} 
+
+a .icon-text:hover{
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+#Notifications{
+    background: red;
+    border-radius: 100%;
+    color: white;
+    padding: 2px;
+    position:absolute;
+    left: 26px;
+    font-size: 12px;    
+}
+             
+.insta-more li{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+#message{
+    background: red;
+    border-radius: 100%;
+    color: white;
+    padding: 2px;
+    position:absolute;
+    left: 21.5px;
+    font-size: 12px;    
+    top:23px;
+}
+
+#Notifications:hover{
+    letter-spacing: 0px;
+
+}

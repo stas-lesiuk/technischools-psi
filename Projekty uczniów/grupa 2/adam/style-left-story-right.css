@@ -1,0 +1,478 @@
+html{
+    color: black;
+}
+body{
+    display: flex;
+    width: 100%;
+}
+.all{
+    display: flex;
+}
+.left-sidebar {
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 250px;
+    list-style-type: none;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 0px;
+
+}
+.logo-wrapper{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#home {
+    height: 50px;
+    margin-left: 0px;
+}
+li {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+}
+.a-left-sidebar {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 25px;
+
+}
+nav{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.more{
+    display: flex;
+    align-items: center;
+}
+footer{
+    margin-top: 60px;
+    margin-left: 10px;
+    width: 100%;
+}
+span{
+    color: black;
+}
+.menu{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+html{
+    color: black;
+
+}
+footer{
+    margin-top: 70px;
+    margin-left: 15px;;
+}
+
+.top-stories{
+    margin-left: 90%;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+}
+.stories{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 30px;
+    width: 500px;
+    background-color: white;
+}
+.img-top{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+.img-top2{
+    background-image: url(../img/dog-tall.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 51%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 6px;
+}
+.img-top1{
+    background-image: url(../img/dog-square.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 51%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 6px;
+}
+.img-top3{
+    background-image: url(../img/dog-wide.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 51%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 6px;
+}
+.img-top4{
+    background-image: url(../img/dc-logo.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 51%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 6px;
+}
+.img-top5{
+    background-image: url(../img/techni-logo-white.png);
+    background-position: center;
+    background-size: contain;
+    border-radius: 51%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 6px;
+}
+a{
+    text-decoration: none;
+}
+.body-right{
+    display: flex;
+    width: 370px;
+    margin-top: 60px;
+    margin-left: 60px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.header .profile-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+#profil-name{
+    gap:10px;
+}
+.main{
+    color: black;
+}
+.header img{
+    border-radius: 50%;
+    width:70px;
+    height: 70px;
+}
+.come-main{
+    color: grey;
+    font-size: small;
+}
+a{
+    text-decoration: none;
+}
+.header .profile-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+#profil-name{
+    gap:10px;
+}
+.main{
+    color: black;
+}
+.header img{
+    border-radius: 50%;
+    width:70px;
+    height: 70px;
+}
+.come-main{
+    color: grey;
+    font-size: small;
+}
+a{
+    text-decoration: none;
+}
+.switch-profile{
+    margin-left: 120px;
+    color: blue;
+    font-size: small;
+}
+.header-content{
+    margin-top: 25px;
+    font-size: 15px;
+}
+#sugestions{
+    color: grey;
+}
+#view-all{
+    color: black;
+    margin-left: 190px;
+    font-size: small;
+}
+.content{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.content .profile-contents{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.profile-contents img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.follow{
+    margin-left: 45px;
+    color: blue;
+    font-size: small;
+}
+.follow:hover{
+
+}
+.main-follow{
+    color: grey;
+    font-size: small;
+    width: 200px;
+   display: block;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.profile-contents{
+    margin-top: 9px;
+}
+.footer{
+    margin-top: 30px;
+}
+.information{
+    color: grey;
+    font-size: small;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.company{
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: small;
+    color: grey;
+}
+.profile-me{
+    background-image: url(../img/profil-me.png);
+    background-position: center;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 51%;
+}
+.profile-jakub{
+    background-image: url(../img/jakub.png);
+}
+.profile-maks{
+    background-image: url(../img/maks.png);
+}
+.profile-fifi{
+    background-image: url(../img/zachnaura.png);
+}
+.profile-jakub-m{
+    background-image: url(../img/jakub-m.png);
+}
+.profile-hub{
+    background-image: url(../img/hubert.png);
+}
+.profile-order{
+    width: 50px;
+    height: 50px;
+    border-radius: 51%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.all-elements .post{
+    width: 500px;
+    height: 640px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-family: "Nowa Helvetica", sans-serif;
+}
+.header .logo-techni{
+    margin-left: 8px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+.header .content-of-profile-techni{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+button{
+    background-color: white;
+    border: none;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 150px;
+    padding-top: 10px;
+}
+.explore{
+    position: absolute;
+    right: 0px;
+    top: -10px;
+}
+.header a{
+    text-decoration: none;
+}
+.come-main{
+    font-size: small;
+}
+#name-of-profile{
+    color: black;
+}
+.photo{
+    position: relative;
+}
+.post .main-post-photo{
+    margin-top: 10px;
+    width: 500px;
+    height: 380px;
+}
+#tagged-persons{
+    position: absolute;
+    left: 10px;
+    bottom: 40px;
+}
+.icons img{
+    width: 34px;
+    height: 34px;
+    gap: 20px;
+    
+}
+#save{
+    position: absolute;
+    right: 10px;
+    top: 445px;
+}
+.icons button{
+    margin-top: -12px;
+    width: 35px;
+    height: 35px;
+}
+.like-by{
+    display: flex;
+    flex-direction: row;    
+}
+.like-by img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.like-by span{
+    font-size: 14px;
+}
+.notifications .like-by{
+    display: flex;
+    align-items: center;
+}
+.notifications a > span{
+    font-size:14px;
+    margin-left: 10px;
+}
+#more-footer-of-post{
+    color: grey;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.time{
+    color: grey;
+    margin-top: 3px;
+    font-size: small;
+    margin-left: 10px
+}
+.footer-post{
+    margin-top: 7px;
+}
+.footer-post img{
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+}
+.notifications .footer-post{
+    display: flex;
+    align-items: center;
+}
+.footer-post span{
+    font-size: small;
+    color: grey;
+    margin-left: 5px;
+}
+.notifications a{
+    text-decoration: none;
+}
+#post{
+    color: rgb(114, 114, 226);
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+input{
+    border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: rgb(255, 255, 255);
+  margin-left: 3px;
+}
+.no-outline{
+    outline: none;
+}
+#like-by-who{
+    margin-left: 3px;
+    font-weight: bold;
+}
+.footer-post{
+    position: relative;
+    border-top: 1px solid rgb(228, 221, 221);
+    padding-top: 4px;
+}
+.left-description{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.right-description{
+    margin-left: 3px;
+    font-size: 14px;
+}

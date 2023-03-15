@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kółko i Krzyżyk</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <section class="points">
+      <div class="points-x">X: 0 punktów</div>
+      <div class="points-o">O: 0 punktów</div>
+    </section>
+    <section class="config">
+      <label>Tło planszy</label>
+      <input type="color" id="board-bg-color" />
+      <label>Kolor kafelka</label>
+      <input type="color" id="board-item-color" />
+    </section>
+    <section class="board">
+      <article class="board-item"></article>
+      <article class="board-item"></article>
+      <article class="board-item"></article>
+
+      <article class="board-item"></article>
+      <article class="board-item"></article>
+      <article class="board-item"></article>
+
+      <article class="board-item"></article>
+      <article class="board-item"></article>
+      <article class="board-item"></article>
+    </section>
+    <button class="reset">Reset</button>
+    <script src="game.js"></script>
+  </body>
+</html>
