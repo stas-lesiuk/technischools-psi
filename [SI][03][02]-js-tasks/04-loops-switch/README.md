@@ -99,8 +99,6 @@ if(operation === '+') {
 }
 ```
 
-```
-
 ## Obiekty
 
 ### Zadanie 6.1
@@ -153,4 +151,7 @@ title: "My menu"
 ```
 
 P.S. dla sprawdzenia, czy dana właściwość jest liczbą, możesz użyć funkcji `typeof`. Np `typeof menu.width === 'number'`, lub `typeof menu[key] === 'number'`.
+
+```
+
 ```
