@@ -3,13 +3,17 @@
 ## Funkcje
 
 [Podstawy funkcji](https://javascript.info/function-basics)
+
 [Wyrażenia funkcyjne](https://javascript.info/function-expressions)
+
 [Funkcje strzałkowe](https://javascript.info/arrow-functions-basics)
 
 ## Tablice
 
 [Tablice - podstawy](https://javascript.info/array)
+
 [Tablice - metody](https://javascript.info/array-methods)
+
 [Zamiana obiektu na tablicę](https://javascript.info/keys-values-entries)
 
 ## Zadania
