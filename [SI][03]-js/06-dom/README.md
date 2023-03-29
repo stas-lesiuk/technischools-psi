@@ -1,6 +1,10 @@
 # Operacje na DOM
 
+---
+
 ## Wyszukiwanie / pobieranie elementów HTML w JavaScript
+
+---
 
 ### getElementById - zwraca jeden element lub null, szukając po id
 
@@ -36,6 +40,8 @@ const elements3 = document.querySelector('.sidebar article.sponsored'); // wszys
 
 ## Zmiana zawartości elementu
 
+---
+
 ### Zmiana tekstu w elemencie
 
 ```
@@ -53,6 +59,8 @@ element.innerHTML = '<strong>Nowy</strong> tekst';
 ---
 
 ## Zmiana atrybutów elementu
+
+---
 
 ### Zmiana stylu elementu
 
@@ -73,6 +81,8 @@ element.classList.remove('green') // usuwa klasę
 ---
 
 ## Tworzenie elementu
+
+---
 
 ### Prosty element
 
@@ -107,7 +117,11 @@ list.appendChild(item3);
 parent.appendChild(list); // dodajemy listę do elementu parent
 ```
 
+---
+
 ## Interakcja z użytkownikiem
+
+---
 
 ### Kliknięcie na element (click event)
 
@@ -161,7 +175,31 @@ function handleElementClick (){
 
 ---
 
+## Iterowanie po elementach
+
+---
+
+### Pętla for of
+
+```
+for (let i = 0; i < items.length; i ++) {
+    items[i].style.color = 'red'
+}
+```
+
+### Pętla for of
+
+```
+for (item of items) {
+    item.style.color = 'green'
+}
+```
+
+---
+
 ## Zadania
+
+---
 
 ### Zadanie 1
 
@@ -180,6 +218,7 @@ function handleElementClick (){
 1. Stwórz HTML z listą trzech elementów.
 1. Pokoloruj drugi z tych elementów na zielono za pomocą JS, używając właściwości `style`.
 1. Zmodyfikuj kod w taki sposób, aby nie używać `style`, tylko dodawać klasę CSS.
+1. Zmodfikuj kod w taki sposób, aby dodawał klassę `active` do każdego elementu. Ważne - użyj pętli, nie duplikuj kodu.
 
 ### Zadanie 3
 
