@@ -171,9 +171,9 @@ function handleElementClick (){
 - - elementem o klasie `child-left` w środku parent
 - - elementem o klasie `child-right` w środku parent
 
-1. Ustaw kolor tła dla lewego dziecka na niebiseki.
-1. Ustaw kolor tła dla prawego dziecka na czerwony.
-1. Ustaw kolor czcionki dla rodzica na biały.
+1. Ustaw kolor tła dla lewego dziecka na niebiseki za pomocą JS, używając właściwości `style`.
+1. Ustaw kolor tła dla prawego dziecka na czerwony za pomocą JS, używając właściwości `style`..
+1. Ustaw kolor czcionki dla rodzica na biały za pomocą JS, używając właściwości `style`..
 
 ### Zadanie 2
 
