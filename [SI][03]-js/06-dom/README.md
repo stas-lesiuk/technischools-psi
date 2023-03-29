@@ -189,3 +189,10 @@ function() handleElementClick{
 - - elementem o klasie `col-right` w środku parent
 - - stwórz po 3 elementy `span.inner` w środku każdej kolumny
 - pokoloruj wszystkie elementy `span.inner` w kolumnie po lewej na niebieski
+
+#### Zadanie 4
+
+- Stwórz html z dwoma elementami:
+- button o klasie `increment`
+- div z id `result`
+- Dodaj event, który będzie zwiększał wartość w divie o 1 za każdym razem, gdy klikniemy w button
