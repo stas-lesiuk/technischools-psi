@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .green {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <aside class="sidebar">Sidebar</aside>
+      <section class="content">
+        <ul>
+          <li id="first-item">Treść</li>
+          <li class="red">Treść</li>
+          <li>Treść</li>
+          <li class="red">Treść</li>
+          <li>Treść</li>
+          <li>Treść</li>
+        </ul>
+      </section>
+      <div id="alert">Click me!</div>
+    </main>
+    <script>
+      // OLD WAY - MEH
+      // const first = document.getElementById("first-item");
+      // const fake = document.getElementById("fake"); // null
+
+      // const red = document.getElementsByClassName("red"); // HTMLCollection(2) [li.red, li.red]
+      // const green = document.getElementsByClassName("green"); // []
+
+      // NEW WAY
+      const first = document.querySelector("#first-item");
+      const fake = document.querySelector("#fake"); // null
+
+      const red = document.querySelectorAll(".red"); // NodeList(2) [li.red, li.red]
+      const green = document.querySelectorAll(".green"); // []
+
+      // document.querySelector("#alert").onclick = function () {
+      //   alert("Hello World!");
+      //   document.querySelector("#alert").onclick = undefined;
+      // };
+
+      function handleClick() {
+        alert("Hello World!");
+        document
+          .querySelector("#alert")
+          .removeEventListener("click", handleClick);
+      }
+
+      document.querySelector("#alert").addEventListener("click", handleClick);
+    </script>
+    <script></script>
+  </body>
+</html>

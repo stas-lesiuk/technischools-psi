@@ -66,6 +66,8 @@ element.style.backgroundColor = 'blue'; // zwróć uwagę na notację camelCase
 
 ```
 const element = document.getElementById('my-element');
+element.classList.add('green') // dodaje klasę
+element.classList.remove('green') // usuwa klasę
 ```
 
 ---
@@ -156,3 +158,34 @@ function() handleElementClick{
   alert('Hello World!');
 }
 ```
+
+---
+
+## Zadania
+
+### Zadanie 1
+
+1. Stwórz html z trzema elementami:
+
+- - elementem o klasie `parent`
+- - elementem o klasie `child-left` w środku parent
+- - elementem o klasie `child-right` w środku parent
+
+1. Ustaw kolor tła dla lewego dziecka na niebiseki.
+1. Ustaw kolor tła dla prawego dziecka na czerwony.
+1. Ustaw kolor czcionki dla rodzica na biały.
+
+### Zadanie 2
+
+1. Stwórz HTML z listą trzech elementów.
+1. Pokoloruj drugi z tych elementów na zielono za pomocą JS, używając właściwości `style`.
+1. Zmodyfikuj kod w taki sposób, aby nie używać `style`, tylko dodawać klasę CSS.
+
+### Zadanie 3
+
+- Stwórz html o następującej strukturze:
+- - elementem o klasie `parent`
+- - elementem o klasie `col-left` w środku parent
+- - elementem o klasie `col-right` w środku parent
+- - stwórz po 3 elementy `span.inner` w środku każdej kolumny
+- pokoloruj wszystkie elementy `span.inner` w kolumnie po lewej na niebieski
