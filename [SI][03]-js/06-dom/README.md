@@ -154,7 +154,7 @@ Można ładniej i czytelniej - wynieść funkcję:
 const element = document.getElementById('my-element');
 element.addEventListener('click', handleElementClick);
 
-function() handleElementClick{
+function handleElementClick (){
   alert('Hello World!');
 }
 ```

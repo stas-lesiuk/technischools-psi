@@ -27,6 +27,7 @@
       <div id="alert">Click me!</div>
     </main>
     <script>
+      // 1. - Pobieranie elementów
       // OLD WAY - MEH
       // const first = document.getElementById("first-item");
       // const fake = document.getElementById("fake"); // null
@@ -34,13 +35,14 @@
       // const red = document.getElementsByClassName("red"); // HTMLCollection(2) [li.red, li.red]
       // const green = document.getElementsByClassName("green"); // []
 
-      // NEW WAY
+      // // NEW WAY
       const first = document.querySelector("#first-item");
       const fake = document.querySelector("#fake"); // null
 
       const red = document.querySelectorAll(".red"); // NodeList(2) [li.red, li.red]
       const green = document.querySelectorAll(".green"); // []
 
+      // 4. - Dodawanie event'ów
       // document.querySelector("#alert").onclick = function () {
       //   alert("Hello World!");
       //   document.querySelector("#alert").onclick = undefined;
