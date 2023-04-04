@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.5 other events</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .bubble {
+        border-radius: 50%;
+        background-color: red;
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bubble"></div>
+    <input type="text" id="letter-input" />
+    <div class="result">
+      <div class="last-letter">
+        <span>Ostatnia litera:</span>
+        <span class="result"></span>
+      </div>
+      <div class="all-letters">
+        <span>Wszystkie litery:</span>
+        <span class="result"></span>
+      </div>
+    </div>
+  </body>
+  <script>
+    let state = {
+      bubbleSize: 50,
+      lastLetter: "",
+      allLetters: "",
+    };
+
+    // pobieramy elementy
+    const bubble = document.querySelector(".bubble");
+    const letterInput = document.querySelector("#letter-input");
+    const lastLetterContainer = document.querySelector(".last-letter .result");
+    const allLettersContainer = document.querySelector(".all-letters .result");
+
+    // dodajemy zdarzenia
+    bubble.addEventListener("mouseover", handleMouseOver);
+
+    letterInput.addEventListener("input", handleInput);
+
+    // reagujemy na zdarzenia
+    function handleMouseOver() {
+      state.bubbleSize += 10;
+      render();
+    }
+
+    function handleInput(event) {
+      const newLetter = event.target.value;
+
+      state.lastLetter = newLetter;
+      state.allLetters = `${state.allLetters}${newLetter}`;
+
+      event.target.value = "";
+
+      if (state.allLetters === "niepoprawny") {
+        alert("Robisz błąd!");
+        state.allLetters = "";
+      }
+
+      if (state.allLetters === "Twój stary") {
+        alert("No cześć Michał :)");
+        state.allLetters = "";
+      }
+
+      render();
+    }
+
+    // wyświetlamy 1 raz na początku
+    render();
+
+    // wyświetlamy na bieżąco po zmianie
+    function render() {
+      bubble.style.width = `${state.bubbleSize}px`;
+      bubble.style.height = `${state.bubbleSize}px`;
+
+      lastLetterContainer.innerText = state.lastLetter;
+      allLettersContainer.innerText = state.allLetters;
+    }
+  </script>
+</html>

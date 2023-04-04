@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.2 - tworzenie elementów</title>
+  </head>
+  <body>
+     
+    <ul class="result"></ul>
+    <button type="button" id="add-simple">Dodaj element</button>
+  </body>
+  <script>
+    // Pobieramy elementy
+    const button = document.querySelector("#add-simple");
+    const resultList = document.querySelector(".result");
+
+    // Dodajemy nasłuchiwanie zdarzeń
+    button.addEventListener("click", handleAddSimpleClick);
+
+    // obsługujemy zdarzenia
+    function handleAddSimpleClick() {
+      const listElement = document.createElement("li");
+      listElement.innerText = "Zadanie 1";
+      resultList.appendChild(listElement);
+    }
+  </script>
+</html>

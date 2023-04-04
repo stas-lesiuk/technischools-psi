@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.4 - basic to-do list</title>
+    <style>
+      .row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <input type="text" id="todo-name" placeholder="Nazwa zadania..." />
+      <button type="button" id="add-todo">Dodaj do listy</button>
+    </div>
+    <h1 class="title"></h1>
+    <ul class="result"></ul>
+  </body>
+  <script>
+    // pobieramy elementy
+    const button = document.querySelector("#add-todo");
+    const resultList = document.querySelector(".result");
+    const input = document.querySelector("#todo-name");
+    const mainTitle = document.querySelector("h1.title");
+
+    button.addEventListener("click", handleAddTodoClick);
+
+    let state = {
+      tasks: ["Nauczyć się JS", "Nakarmić kota"],
+    };
+
+    render();
+
+    function handleAddTodoClick() {
+      state.tasks.push(input.value);
+      input.value = "";
+
+      render();
+    }
+
+    function render() {
+      for (let task of state.tasks) {
+        const listElement = document.createElement("li");
+        listElement.innerText = task;
+        resultList.appendChild(listElement);
+      }
+      mainTitle.innerText = `Moje zadania (${state.tasks.length}):`;
+    }
+  </script>
+</html>
