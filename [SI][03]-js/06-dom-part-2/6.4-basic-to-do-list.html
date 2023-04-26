@@ -27,30 +27,38 @@
     // pobieramy elementy
     const button = document.querySelector("#add-todo");
     const resultList = document.querySelector(".result");
-    const input = document.querySelector("#todo-name");
+    const todoNameInput = document.querySelector("#todo-name");
     const mainTitle = document.querySelector("h1.title");
 
+    // dodajemy event listenery
     button.addEventListener("click", handleAddTodoClick);
 
+    // tworzymy stan aplikacji
     let state = {
-      tasks: ["Nauczyć się JS", "Nakarmić kota"],
+      tasks: ["Nauczyć się JS", "Nakarmić kota", "Wystawić oceny", "elo"],
     };
 
+    // początkowy render
     render();
 
+    // obsługa zdarzeń - aktualizujemy stan i robimy render na nowo
     function handleAddTodoClick() {
-      state.tasks.push(input.value);
-      input.value = "";
+      state.tasks.push(todoNameInput.value);
+      todoNameInput.value = "";
 
       render();
     }
 
+    // aktualizujemy HTML
     function render() {
+      resultList.innerHTML = "";
+
       for (let task of state.tasks) {
         const listElement = document.createElement("li");
         listElement.innerText = task;
         resultList.appendChild(listElement);
       }
+
       mainTitle.innerText = `Moje zadania (${state.tasks.length}):`;
     }
   </script>

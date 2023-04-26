@@ -37,8 +37,8 @@
   <script>
     let state = {
       bubbleSize: 50,
-      lastLetter: "",
-      allLetters: "",
+      lastLetter: "j",
+      allLetters: "Hej",
     };
 
     // pobieramy elementy
@@ -63,6 +63,8 @@
 
       state.lastLetter = newLetter;
       state.allLetters = `${state.allLetters}${newLetter}`;
+      // state.allLetters += newLetter;
+      // state.allLetters = state.allLetters + newLetter
 
       event.target.value = "";
 

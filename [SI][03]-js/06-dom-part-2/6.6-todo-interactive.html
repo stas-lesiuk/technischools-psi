@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ToDo list</h1>
+    <input type="text" id="todo-name" placeholder="Add task" />
+    <button id="add-todo" type="submit">Dodaj</button>
+    <ul id="todo-list"></ul>
+  </body>
+  <script>
+    const todoInput = document.querySelector("#todo-name");
+    const addTodoBtn = document.querySelector("#add-todo");
+    const todosList = document.querySelector("#todo-list");
+
+    showSingleTodo("Nakarm psa");
+    showSingleTodo("Sprzeadj psa");
+
+    addTodoBtn.addEventListener("click", addTodo);
+
+    function addTodo() {
+      // display additional todo when adding
+      showSingleTodo(todoInput.value);
+      todoInput.value = "";
+    }
+
+    // initially display available todos
+    for (let todoName of state.todos) {
+      showSingleTodo(todoName);
+    }
+
+    function showSingleTodo(todoName) {
+      const listItem = document.createElement("li");
+      listItem.innerText = todoName;
+      todosList.appendChild(listItem);
+    }
+  </script>
+</html>
