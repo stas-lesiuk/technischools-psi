@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista zadań</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .form-wrapper,
+    .todos-wrapper {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 0 0 20px;
+    }
+
+    .btn {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 6px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .btn--active {
+      background-color: #ccc;
+    }
+
+    .todo-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .todo-item--completed .todo-name {
+      text-decoration: line-through;
+    }
+  </style>
+  <body>
+    <div class="main-wrapper">
+      <div class="form-wrapper">
+        <input type="text" placeholder="Zacznij wpisywać ..." id="todo-name" />
+        <button type="button" id="add-todo">Dodaj zadanie</button>
+      </div>
+      <div class="todos-wrapper">
+        <div class="filters">
+          <button type="button" class="btn btn--active" id="all">
+            Wszystkie
+          </button>
+          <button type="button" class="btn" id="active">Aktywne</button>
+          <button type="button" class="btn" id="completed">Zakończone</button>
+        </div>
+        <h1>TODOS: <span class="todos-count">2</span></h1>
+        <ul class="todos-list" id="todos">
+          <li class="todo-item">
+            <span class="todo-name">Zadanie 1</span>
+            <button type="button" class="btn btn--danger">Usuń</button>
+          </li>
+          <li class="todo-item todo-item--completed">
+            <span class="todo-name">Zadanie 2</span>
+            <button type="button" class="btn btn--danger">Usuń</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
