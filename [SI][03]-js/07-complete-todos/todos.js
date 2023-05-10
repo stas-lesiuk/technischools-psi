@@ -57,5 +57,12 @@ function renderSingleTodo(todo, index) {
 
   todoItem.appendChild(todoName);
 
+  const handleTodoClick = () => {
+    todos[index].completed = !todos[index].completed;
+    renderTodos();
+  };
+
+  todoItem.addEventListener("click", handleTodoClick);
+
   return todoItem;
 }
