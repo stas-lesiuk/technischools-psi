@@ -4,7 +4,7 @@ const todosInput = document.querySelector("#todo-name");
 const addTodoBtn = document.querySelector("#add-todo");
 
 // Stan aplikacji
-const todos = [
+let todos = [
   {
     name: "Nakarm psa",
     completed: true,
@@ -55,9 +55,31 @@ function renderSingleTodo(todo, index) {
   todoName.classList.add("todo-name");
   todoName.innerText = todo.name;
 
-  todoItem.appendChild(todoName);
+  const deleteBtn = document.createElement("button");
+  deleteBtn.classList.add("btn", "btn--danger");
+  deleteBtn.innerText = "Usuń";
 
-  const handleTodoClick = () => {
+  const deleteTodo = (event) => {
+    console.log("usuwam todo o indeksie " + index, "event to jest", event);
+    event.stopPropagation();
+    console.log(
+      "zatrzymałem propagację eventu, TODO zostanie usunięte, ale żadne inne nie zostanie skreślone"
+    );
+    todos = [...todos.slice(0, index), ...todos.slice(index + 1)];
+    renderTodos();
+  };
+
+  deleteBtn.addEventListener("click", deleteTodo);
+
+  todoItem.appendChild(todoName);
+  todoItem.appendChild(deleteBtn);
+
+  const handleTodoClick = (event) => {
+    console.log(
+      "zmieniam status todo o indeksie " + index,
+      "event to jest",
+      event
+    );
     todos[index].completed = !todos[index].completed;
     renderTodos();
   };
@@ -65,4 +87,15 @@ function renderSingleTodo(todo, index) {
   todoItem.addEventListener("click", handleTodoClick);
 
   return todoItem;
+}
+
+{
+  /* <li class="todo-item">
+            <span class="todo-name">Zadanie 1</span>
+            <button type="button" class="btn btn--danger">Usuń</button>
+          </li>
+          <li class="todo-item todo-item--completed">
+            <span class="todo-name">Zadanie 2</span>
+            <button type="button" class="btn btn--danger">Usuń</button>
+          </li> */
 }
