@@ -56,6 +56,7 @@
         <input type="text" placeholder="Zacznij wpisywać ..." id="todo-name" />
         <button type="button" id="add-todo">Dodaj zadanie</button>
       </div>
+
       <div class="todos-wrapper">
         <div class="filters">
           <button type="button" class="btn btn--active" id="all">
@@ -64,18 +65,12 @@
           <button type="button" class="btn" id="active">Aktywne</button>
           <button type="button" class="btn" id="completed">Zakończone</button>
         </div>
+
         <h1>TODOS: <span class="todos-count">2</span></h1>
-        <ul class="todos-list" id="todos">
-          <li class="todo-item">
-            <span class="todo-name">Zadanie 1</span>
-            <button type="button" class="btn btn--danger">Usuń</button>
-          </li>
-          <li class="todo-item todo-item--completed">
-            <span class="todo-name">Zadanie 2</span>
-            <button type="button" class="btn btn--danger">Usuń</button>
-          </li>
-        </ul>
+
+        <ul class="todos-list" id="todos"></ul>
       </div>
     </div>
+    <script src="./todos.js"></script>
   </body>
 </html>
