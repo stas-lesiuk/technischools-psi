@@ -1,6 +1,7 @@
 // Selektory
 const todosList = document.querySelector(".todos-list");
 const todosInput = document.querySelector("#todo-name");
+const addTodoBtn = document.querySelector("#add-todo");
 
 // Stan aplikacji
 const todos = [
@@ -12,17 +13,34 @@ const todos = [
     name: "Sprzedaj psa",
     completed: false,
   },
+  {
+    name: "Świętuj",
+    completed: false,
+  },
 ];
 
+// Eventy - reagujemy na zdarzenia takie jak kliknięcie, wpisanie tekstu, itp.
+addTodoBtn.addEventListener("click", addTodo);
+
+function addTodo() {
+  todos.push({
+    name: todosInput.value,
+    completed: false,
+  });
+  todosInput.value = "";
+  renderTodos();
+}
+
+// UI - wyświetlamy dane na stronie
 renderTodos();
 
 function renderTodos() {
   todosList.innerHTML = "";
 
-  todos.forEach((todo, index) => {
-    const todoItem = renderSingleTodo(todo, index);
+  for (let i = 0; i < todos.length; i++) {
+    const todoItem = renderSingleTodo(todos[i], i);
     todosList.appendChild(todoItem);
-  });
+  }
 }
 
 function renderSingleTodo(todo, index) {
