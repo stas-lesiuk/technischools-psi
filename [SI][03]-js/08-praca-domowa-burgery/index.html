@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koszyk z burgerami</title>
+    <style>
+      body {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .menu,
+      .cart {
+        border: 1px solid black;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        min-width: 400px;
+      }
+    </style>
+    <script defer src="burgers.js"></script>
+  </head>
+  <body>
+    <section class="menu">
+      <article>
+        <h3>Burger</h3>
+        <p>Opis ... Opis ...</p>
+        <button type="button">$10</button>
+      </article>
+      <article>
+        <h3>Fryty</h3>
+        <p>Opis ... Opis ...</p>
+        <button type="button">$4</button>
+      </article>
+      <article>
+        <h3>Cola</h3>
+        <p>Opis ... Opis ...</p>
+        <button type="button">$3</button>
+      </article>
+    </section>
+    <section class="cart">
+      <h2>Koszyk</h2>
+      <ul id="cart-items"></ul>
+      <div class="cart-summary">Suma koszyka: 0</div>
+      <button>Wyczyść koszyk</button>
+    </section>
+  </body>
+</html>

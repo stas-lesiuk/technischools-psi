@@ -65,7 +65,10 @@ function renderSingleTodo(todo, index) {
     console.log(
       "zatrzymałem propagację eventu, TODO zostanie usunięte, ale żadne inne nie zostanie skreślone"
     );
-    todos = [...todos.slice(0, index), ...todos.slice(index + 1)];
+    todos = [
+      ...todos.slice(0, index),
+      ...todos.slice(index + 1)
+    ];
     renderTodos();
   };
 
